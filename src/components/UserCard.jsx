@@ -36,7 +36,7 @@ const UserCard = () => {
         </header>
         <p className="bio">{bio}</p>
         <span className="company">
-          <BsFillBuildingsFill /> {company || "FreeCodeCamp Student"}
+          <BsFillBuildingsFill /> {company || "Company name not provided."}
         </span>
         <span className="location">
           {" "}

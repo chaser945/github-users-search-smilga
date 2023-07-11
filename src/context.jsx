@@ -62,7 +62,7 @@ const GithubProvider = ({ children }) => {
 
   const fetchUser = () => {
     setLoading(true)
-    setError({ status: "false", type: "", msg: "" })
+    setError({ status: false, type: "", msg: "" })
     axios(`${baseUrl}/users/${query}`)
       .then((response) => {
         console.log(response)

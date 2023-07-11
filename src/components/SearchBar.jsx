@@ -28,7 +28,7 @@ const SearchBar = () => {
             onChange={handleChange}
             value={query}
           />
-          {loading || error.status ? null : (
+          {loading || (error.type === "request" && error.status) ? null : (
             <button className="btn btn-search" onClick={fetchUser}>
               Search
             </button>
